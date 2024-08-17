@@ -19,4 +19,9 @@
 {  "Action": "EditMap",
     "Target": "Maps/Woods",
       "AddWarps": ["46 2 Farm 12 84", "47 2 Farm 12 84", "48 2 Farm 12 84"]}, 
+
+    { "Action": "EditImage",
+      "Target": "LooseSprites/map",
+      "FromFile": "assets/map.png"   ,
+		"When": {"HasFile:{{FromFile}}": true},},
       ]}
