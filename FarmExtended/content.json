@@ -1,0 +1,22 @@
+{  "Format": "2.0.0",
+  "Changes": [    	
+    { "Action": "Load",
+      "Target": "Maps/Farm",
+      "FromFile": "assets/Farm.tmx"    },	
+			
+{   "Action": "EditMap",
+     "Target": "Maps/Woods",
+	"When":	{"Farmtype":"Standard"},
+     "FromFile": "assets/Woods.tmx",
+	"PatchMode": "Replace",
+     "ToArea": { "X": 45, "Y": 0, "Width": 5, "Height": 6},},
+	
+ { "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        "FarmMod.1": "Secret Woods"},},
+	 
+{  "Action": "EditMap",
+    "Target": "Maps/Woods",
+      "AddWarps": ["46 2 Farm 12 84", "47 2 Farm 12 84", "48 2 Farm 12 84"]}, 
+      ]}
